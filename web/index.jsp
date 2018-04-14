@@ -7,11 +7,14 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
+    <%@include file="layer/header.jsp" %>
     <body>
-        <h1>Hello World!</h1>
+        
+        
+        <%@include file="layer/content.jsp" %>
+        
+        <!--JavaScript at end of body for optimized loading, y cargandolo  como hosted library como buena practica.-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     </body>
+    <%@include file="layer/footer.jsp" %>
 </html>
