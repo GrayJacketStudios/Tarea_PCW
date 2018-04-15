@@ -17,10 +17,9 @@
 <c:if test = "${not empty sessionScope.usuarios}">
      <nav>
     <div class="nav-wrapper">
-      <a href="/home.jsp" class="brand-logo">Prueba 1</a>
+      <a href="/productos.jsp" class="brand-logo">Prueba 1</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="home.jsp">Inicio</a></li>
         <li><a href="productos.jsp">Productos</a></li>
         <li><a href="nProductos.jsp">Añadir productos</a></li>
         <li><a href="cerrar.jsp">Cerrar sesión</a></li>

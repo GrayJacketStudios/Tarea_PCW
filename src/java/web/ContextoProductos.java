@@ -37,7 +37,7 @@ public class ContextoProductos implements ServletContextListener {
         lista.add(new productos("Reloj Maserati Hombre R8873618005","Reloj Maserati Hombre R8873618005\n" +
             "calendario\n" +
             "cronografo\n" +
-            "cja y correa color oro rosa",295000,"https://www.todo-relojes.com/detalle.asp?codigo=29950#"));
+            "cja y correa color oro rosa",295000,"https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kechiq.es%2Fsrc%2Fimg%2Fproducts%2Fthumbnail%2Fmaserati-r8873618005-13295.jpeg&f=1"));
         lista.add(new productos("Reloj Armani Exchange Modelo: AX2328 ","Marca ARMANI EXCHANGE Modelo AX2328 Familia o Colección Nico Tamaño de la Caja 44 mm Material del Extensible Acero Color del Extensible Dorado Color de la Caratula Negro Resistencia al Agua 50 m Género Caballero Bisel Acero Edición Línea Cristal Reloj Mineral Estilo de Vida Moda Fijación Mariposa doble Forma Circular Funcionamiento Análogo Detalle de carátula Logotipo de la marca Tipo de reloj Reloj moda Otra Información Limpiar con un paño suave",1470719,"https://i2.linio.com/p/6cd14ee395f393e38e8a8841348500d3-product.jpg"));
         sce.getServletContext().setAttribute("dataProductos", lista);
     }

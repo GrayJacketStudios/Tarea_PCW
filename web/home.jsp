@@ -9,10 +9,10 @@
     <a href="index.jsp">Inicio</a>
 </c:if>
 <c:if test = "${not empty sessionScope.usuarios}">
-    <h6>Bienvenido, ${sessionScope.usuarios.nombre}</h6>
+    <h5 style="font-family: 'futura', bold, sans-serif; color: white;">Bienvenido, ${sessionScope.usuarios.nombre}</h5>
      <div class="outer">
             <div class="row">
-                <div class="col s6 offset-s3 z-depth-3 tarjeta">
+                <div class="col s8 offset-s2 z-depth-3 tarjeta">
                     <h3>Titulo de la pagina</h3>
                     Bienvenido a <<'Nombre de tienda generico'>>, donde podras encontrar relojes de todo tipo y otros productos.
                     <br>

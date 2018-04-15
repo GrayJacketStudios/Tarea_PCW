@@ -55,7 +55,7 @@ public class IniciarSesion extends HttpServlet {
                 }
                 else{
                     request.getSession().setAttribute("usuarios", personaOk);
-                    response.sendRedirect("home.jsp");
+                    response.sendRedirect("productos.jsp");
                 }
     }
 

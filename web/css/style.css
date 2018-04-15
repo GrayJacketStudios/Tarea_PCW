@@ -18,6 +18,8 @@ body{
     
     background: whitesmoke;
     border-radius: 10px 10px;
+    justify-content: center;
+
 
 }
 
@@ -38,4 +40,8 @@ body{
 .middle {
   display: table-cell;
   vertical-align: middle;
+}
+
+.item{
+
 }

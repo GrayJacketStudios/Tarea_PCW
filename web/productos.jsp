@@ -10,35 +10,52 @@
     <a href="index.jsp">Inicio</a>
 </c:if>
 <c:if test = "${not empty sessionScope.usuarios}">
-    <h6>Bienvenido, ${sessionScope.usuarios.nombre}</h6>
+    <h5 style="font-family: 'futura', bold, sans-serif; color: white;">Bienvenido, ${sessionScope.usuarios.nombre}</h5>
      <div class="outer">
-            <div class="row ">
-                <div class="col s6 offset-s3 z-depth-3 tarjeta">
+            <div class="row">
+                <div class="col s10 offset-s1 z-depth-3 tarjeta">
+                    
+                    <div >
                     <%
                     List<productos> LProductos = (List<productos>)getServletContext().getAttribute("dataProductos");
                         
                     for(productos p: LProductos){
                         %>
-                        <ul class="collection">
-                            <li class="collection-item avatar">
-                              <img src="<%=p.getImgUrl()%>" alt="" class="circle">
-                              <span class="title"><%=p.getNombre()%></span>
-                              <p>$ <%=p.getPrecio()%> CLP<br>
-                                 <%=p.getDescripcion()%>
-                              </p>
-                              <a href="#!" class="secondary-content"><%=p.getIdProducto()%></a>
-                            </li>
-                        </ul>
-                        <div class="item">
-                            
                         
-                        </div>
+                        
+                        
+  <div class="card medium s6 m3 col item">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="<%=p.getImgUrl()%>">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><%=p.getNombre()%><i class="material-icons right">more_vert</i></span>
+      <p>$ <%=p.getPrecio()%> CLP</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><%=p.getNombre()%><i class="material-icons right">close</i></span>
+      <p>$ <%=p.getPrecio()%> CLP</p>
+      <p><%=(p.getDescripcion())%></p>
+      <br>
+      <p>Id producto: <%=(p.getIdProducto())%></p>
+    </div>
+  </div>
+            
+                        
+                        
+                        
+                       
                         <%
                     }    
                         
                         
                         
                     %>
+                    </div>
+                    
+                    
+                    
+                    
                 </div>
             </div>
         </div>

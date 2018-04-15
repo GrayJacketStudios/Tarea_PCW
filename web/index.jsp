@@ -12,7 +12,7 @@
     <body>
         
         <c:if test = "${not empty sessionScope.usuarios}">
-            <c:redirect url="home.jsp"></c:redirect>
+            <c:redirect url="productos.jsp"></c:redirect>
         </c:if>
         
         <div class="outer">
