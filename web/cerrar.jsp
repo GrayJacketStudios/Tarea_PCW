@@ -1,17 +1,4 @@
-<%-- 
-    Document   : cerrar
-    Created on : 13-abr-2018, 23:02:40
-    Author     : Informatica
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+<%
+session.invalidate();
+response.sendRedirect("index.jsp");
+%>

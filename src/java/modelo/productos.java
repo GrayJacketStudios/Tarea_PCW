@@ -15,15 +15,25 @@ public class productos {
     protected int idProducto;
     protected String nombre;
     protected String descripcion;
+    protected String imgUrl;
     protected int precio;
     
     private static final AtomicInteger count = new AtomicInteger(0); 
 
-    public productos(String nombre, String descripcion, int precio) {
+    public productos(String nombre, String descripcion, int precio, String img) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
         this.idProducto = count.incrementAndGet();
+        this.imgUrl = img;
+    }
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
 
     public int getIdProducto() {

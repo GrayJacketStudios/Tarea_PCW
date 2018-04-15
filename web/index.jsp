@@ -4,11 +4,16 @@
     Author     : Informatica
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <%@include file="layer/header.jsp" %>
     <body>
+        
+        <c:if test = "${not empty sessionScope.usuarios}">
+            <c:redirect url="home.jsp"></c:redirect>
+        </c:if>
         
         <div class="outer">
             <div class="row middle">
@@ -37,8 +42,6 @@
             </div>
         </div>
         
-        <!--JavaScript at end of body for optimized loading, y cargandolo  como hosted library como buena practica.-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     </body>
     <%@include file="layer/footer.jsp" %>
 </html>

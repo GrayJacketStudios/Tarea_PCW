@@ -54,8 +54,8 @@ public class IniciarSesion extends HttpServlet {
                     request.getRequestDispatcher("index.jsp").forward(request, response);
                 }
                 else{
-                    request.getSession().setAttribute("persona", personaOk);
-                    response.sendRedirect("panel.jsp");
+                    request.getSession().setAttribute("usuarios", personaOk);
+                    response.sendRedirect("home.jsp");
                 }
     }
 

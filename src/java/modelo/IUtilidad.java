@@ -12,5 +12,11 @@ import java.util.List;
  * @author Informatica
  */
 public interface IUtilidad {
+    //Area Usuarios
     usuarios logear(String nombre, String pass, List<usuarios> lista);
+    usuarios chequear(String nombre, List<usuarios> lista);
+    usuarios registrar(String nombre, String pass, List<usuarios> lista);
+    
+    //Area Productos
+    productos ingresar(String nombre, String descripcion, int precio, String url,List<productos> lista);
 }
